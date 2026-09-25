@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EduWiki Akademi - Sanal Derslik Platformu & Makale Kütüphanesi</title>
+    <meta name="description" content="Tüm sınıf seviyelerine uygun, Gemini modelleri destekli, sınav stratejileri ve eğitim makaleleri içeren sanal derslik ve kütüphane." />
+    <meta property="og:title" content="EduWiki Akademi - Sanal Derslik Platformu & Makale Kütüphanesi" />
+    <meta property="og:description" content="Tüm sınıf seviyelerine uygun, Gemini modelleri destekli, sınav stratejileri ve eğitim makaleleri içeren sanal derslik ve kütüphane." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script>
+      // Suppress benign Vite WebSocket disconnect/connection failure errors in preview environment
+      window.addEventListener('unhandledrejection', function(event) {
+        var reason = event && event.reason;
+        var msg = (reason && (reason.message || reason.toString())) || '';
+        if (typeof msg === 'string' && (msg.indexOf('WebSocket') !== -1 || msg.indexOf('websocket') !== -1 || msg.indexOf('failed to connect') !== -1)) {
+          event.preventDefault();
+          if (event.stopImmediatePropagation) event.stopImmediatePropagation();
+        }
+      });
+      window.addEventListener('error', function(event) {
+        var msg = (event && (event.message || '')) || '';
+        if (typeof msg === 'string' && (msg.indexOf('WebSocket') !== -1 || msg.indexOf('websocket') !== -1 || msg.indexOf('failed to connect') !== -1)) {
+          event.preventDefault();
+          if (event.stopImmediatePropagation) event.stopImmediatePropagation();
+        }
+      });
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  </head>
+  <body class="bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-50 transition-colors duration-200">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

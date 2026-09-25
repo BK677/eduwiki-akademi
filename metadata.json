@@ -1,0 +1,8 @@
+{
+  "name": "Remix EduWiki Akademi - Sanal Derslik Platformu",
+  "description": "Tüm sınıf seviyelerine uygun, Gemini modelleri destekli, sınav stratejileri ve eğitim makaleleri kütüphaneli, sesli etkileşimli ve kodlama laboratuvarlı sanal derslik platformu.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
